@@ -7,20 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DBF3383C1C5BFFD700864199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF3383B1C5BFFD700864199 /* AppDelegate.m */; };
-		DBF3383F1C5BFFD700864199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF3383E1C5BFFD700864199 /* main.m */; };
+		DB106F791C5C0237008A512B /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB106F781C5C0237008A512B /* settings.plist */; };
+		DB106F7B1C5C02BD008A512B /* assets in Resources */ = {isa = PBXBuildFile; fileRef = DB106F7A1C5C02BD008A512B /* assets */; };
+		DBF3383F1C5BFFD700864199 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBF3383E1C5BFFD700864199 /* main.cpp */; };
 		DBF338411C5BFFD700864199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF338401C5BFFD700864199 /* Assets.xcassets */; };
-		DBF338441C5BFFD700864199 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF338421C5BFFD700864199 /* MainMenu.xib */; };
+		DBF3384F1C5C006D00864199 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384B1C5C006D00864199 /* SDL2_image.framework */; };
+		DBF338501C5C006D00864199 /* SDL2_image.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384B1C5C006D00864199 /* SDL2_image.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF338511C5C006D00864199 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384C1C5C006D00864199 /* SDL2_mixer.framework */; };
+		DBF338521C5C006D00864199 /* SDL2_mixer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384C1C5C006D00864199 /* SDL2_mixer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF338531C5C006D00864199 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384D1C5C006D00864199 /* SDL2_ttf.framework */; };
+		DBF338541C5C006D00864199 /* SDL2_ttf.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384D1C5C006D00864199 /* SDL2_ttf.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF338551C5C006D00864199 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384E1C5C006D00864199 /* SDL2.framework */; };
+		DBF338561C5C006D00864199 /* SDL2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF3384E1C5C006D00864199 /* SDL2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBF3385A1C5C009900864199 /* Meteor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF338591C5C009900864199 /* Meteor.framework */; };
+		DBF3385B1C5C009900864199 /* Meteor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBF338591C5C009900864199 /* Meteor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DBF338571C5C006D00864199 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DBF338501C5C006D00864199 /* SDL2_image.framework in Embed Frameworks */,
+				DBF338541C5C006D00864199 /* SDL2_ttf.framework in Embed Frameworks */,
+				DBF338521C5C006D00864199 /* SDL2_mixer.framework in Embed Frameworks */,
+				DBF338561C5C006D00864199 /* SDL2.framework in Embed Frameworks */,
+				DBF3385B1C5C009900864199 /* Meteor.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DB106F781C5C0237008A512B /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		DB106F7A1C5C02BD008A512B /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		DBF338371C5BFFD700864199 /* DoYouEvenDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYouEvenDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBF3383A1C5BFFD700864199 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		DBF3383B1C5BFFD700864199 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBF3383E1C5BFFD700864199 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBF3383E1C5BFFD700864199 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		DBF338401C5BFFD700864199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DBF338431C5BFFD700864199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DBF338451C5BFFD700864199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF3384B1C5C006D00864199 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = /Library/Frameworks/SDL2_image.framework; sourceTree = "<absolute>"; };
+		DBF3384C1C5C006D00864199 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = /Library/Frameworks/SDL2_mixer.framework; sourceTree = "<absolute>"; };
+		DBF3384D1C5C006D00864199 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = /Library/Frameworks/SDL2_ttf.framework; sourceTree = "<absolute>"; };
+		DBF3384E1C5C006D00864199 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = /Library/Frameworks/SDL2.framework; sourceTree = "<absolute>"; };
+		DBF338591C5C009900864199 /* Meteor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Meteor.framework; path = ../../../../../toolchains/lib/osx/Meteor.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF3384F1C5C006D00864199 /* SDL2_image.framework in Frameworks */,
+				DBF338531C5C006D00864199 /* SDL2_ttf.framework in Frameworks */,
+				DBF338511C5C006D00864199 /* SDL2_mixer.framework in Frameworks */,
+				DBF338551C5C006D00864199 /* SDL2.framework in Frameworks */,
+				DBF3385A1C5C009900864199 /* Meteor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +74,7 @@
 		DBF3382E1C5BFFD700864199 = {
 			isa = PBXGroup;
 			children = (
+				DBF338581C5C007C00864199 /* Libraries */,
 				DBF338391C5BFFD700864199 /* DoYouEvenDemon */,
 				DBF338381C5BFFD700864199 /* Products */,
 			);
@@ -53,11 +91,8 @@
 		DBF338391C5BFFD700864199 /* DoYouEvenDemon */ = {
 			isa = PBXGroup;
 			children = (
-				DBF3383A1C5BFFD700864199 /* AppDelegate.h */,
-				DBF3383B1C5BFFD700864199 /* AppDelegate.m */,
+				DB106F7A1C5C02BD008A512B /* assets */,
 				DBF338401C5BFFD700864199 /* Assets.xcassets */,
-				DBF338421C5BFFD700864199 /* MainMenu.xib */,
-				DBF338451C5BFFD700864199 /* Info.plist */,
 				DBF3383D1C5BFFD700864199 /* Supporting Files */,
 			);
 			path = DoYouEvenDemon;
@@ -66,9 +101,23 @@
 		DBF3383D1C5BFFD700864199 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DBF3383E1C5BFFD700864199 /* main.m */,
+				DBF338451C5BFFD700864199 /* Info.plist */,
+				DB106F781C5C0237008A512B /* settings.plist */,
+				DBF3383E1C5BFFD700864199 /* main.cpp */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBF338581C5C007C00864199 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				DBF338591C5C009900864199 /* Meteor.framework */,
+				DBF3384B1C5C006D00864199 /* SDL2_image.framework */,
+				DBF3384C1C5C006D00864199 /* SDL2_mixer.framework */,
+				DBF3384D1C5C006D00864199 /* SDL2_ttf.framework */,
+				DBF3384E1C5C006D00864199 /* SDL2.framework */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +130,7 @@
 				DBF338331C5BFFD700864199 /* Sources */,
 				DBF338341C5BFFD700864199 /* Frameworks */,
 				DBF338351C5BFFD700864199 /* Resources */,
+				DBF338571C5C006D00864199 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -98,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = cesarparent;
+				ORGANIZATIONNAME = PixelSpark;
 				TargetAttributes = {
 					DBF338361C5BFFD700864199 = {
 						CreatedOnToolsVersion = 7.2;
@@ -128,8 +178,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB106F7B1C5C02BD008A512B /* assets in Resources */,
 				DBF338411C5BFFD700864199 /* Assets.xcassets in Resources */,
-				DBF338441C5BFFD700864199 /* MainMenu.xib in Resources */,
+				DB106F791C5C0237008A512B /* settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,23 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF3383F1C5BFFD700864199 /* main.m in Sources */,
-				DBF3383C1C5BFFD700864199 /* AppDelegate.m in Sources */,
+				DBF3383F1C5BFFD700864199 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		DBF338421C5BFFD700864199 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBF338431C5BFFD700864199 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DBF338461C5BFFD700864199 /* Debug */ = {
@@ -243,6 +282,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/cesar/toolchains/lib/osx,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DoYouEvenDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarparent.DoYouEvenDemon;
@@ -255,6 +298,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/cesar/toolchains/lib/osx,
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DoYouEvenDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarparent.DoYouEvenDemon;
@@ -281,6 +328,7 @@
 				DBF3384A1C5BFFD700864199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
