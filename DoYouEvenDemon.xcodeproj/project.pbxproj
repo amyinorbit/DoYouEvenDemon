@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBF3383C1C5BFFD700864199 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF3383B1C5BFFD700864199 /* AppDelegate.m */; };
+		DBF3383F1C5BFFD700864199 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF3383E1C5BFFD700864199 /* main.m */; };
+		DBF338411C5BFFD700864199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF338401C5BFFD700864199 /* Assets.xcassets */; };
+		DBF338441C5BFFD700864199 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF338421C5BFFD700864199 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DBF338371C5BFFD700864199 /* DoYouEvenDemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoYouEvenDemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF3383A1C5BFFD700864199 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBF3383B1C5BFFD700864199 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBF3383E1C5BFFD700864199 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBF338401C5BFFD700864199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBF338431C5BFFD700864199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DBF338451C5BFFD700864199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBF338341C5BFFD700864199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBF3382E1C5BFFD700864199 = {
+			isa = PBXGroup;
+			children = (
+				DBF338391C5BFFD700864199 /* DoYouEvenDemon */,
+				DBF338381C5BFFD700864199 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBF338381C5BFFD700864199 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBF338371C5BFFD700864199 /* DoYouEvenDemon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBF338391C5BFFD700864199 /* DoYouEvenDemon */ = {
+			isa = PBXGroup;
+			children = (
+				DBF3383A1C5BFFD700864199 /* AppDelegate.h */,
+				DBF3383B1C5BFFD700864199 /* AppDelegate.m */,
+				DBF338401C5BFFD700864199 /* Assets.xcassets */,
+				DBF338421C5BFFD700864199 /* MainMenu.xib */,
+				DBF338451C5BFFD700864199 /* Info.plist */,
+				DBF3383D1C5BFFD700864199 /* Supporting Files */,
+			);
+			path = DoYouEvenDemon;
+			sourceTree = "<group>";
+		};
+		DBF3383D1C5BFFD700864199 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBF3383E1C5BFFD700864199 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBF338361C5BFFD700864199 /* DoYouEvenDemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBF338481C5BFFD700864199 /* Build configuration list for PBXNativeTarget "DoYouEvenDemon" */;
+			buildPhases = (
+				DBF338331C5BFFD700864199 /* Sources */,
+				DBF338341C5BFFD700864199 /* Frameworks */,
+				DBF338351C5BFFD700864199 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoYouEvenDemon;
+			productName = DoYouEvenDemon;
+			productReference = DBF338371C5BFFD700864199 /* DoYouEvenDemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBF3382F1C5BFFD700864199 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = cesarparent;
+				TargetAttributes = {
+					DBF338361C5BFFD700864199 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = DBF338321C5BFFD700864199 /* Build configuration list for PBXProject "DoYouEvenDemon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBF3382E1C5BFFD700864199;
+			productRefGroup = DBF338381C5BFFD700864199 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBF338361C5BFFD700864199 /* DoYouEvenDemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBF338351C5BFFD700864199 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF338411C5BFFD700864199 /* Assets.xcassets in Resources */,
+				DBF338441C5BFFD700864199 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBF338331C5BFFD700864199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBF3383F1C5BFFD700864199 /* main.m in Sources */,
+				DBF3383C1C5BFFD700864199 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBF338421C5BFFD700864199 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBF338431C5BFFD700864199 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBF338461C5BFFD700864199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DBF338471C5BFFD700864199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DBF338491C5BFFD700864199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DoYouEvenDemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesarparent.DoYouEvenDemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBF3384A1C5BFFD700864199 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = DoYouEvenDemon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cesarparent.DoYouEvenDemon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBF338321C5BFFD700864199 /* Build configuration list for PBXProject "DoYouEvenDemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBF338461C5BFFD700864199 /* Debug */,
+				DBF338471C5BFFD700864199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBF338481C5BFFD700864199 /* Build configuration list for PBXNativeTarget "DoYouEvenDemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBF338491C5BFFD700864199 /* Debug */,
+				DBF3384A1C5BFFD700864199 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBF3382F1C5BFFD700864199 /* Project object */;
+}
