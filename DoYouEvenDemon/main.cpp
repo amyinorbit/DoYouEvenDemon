@@ -7,10 +7,11 @@
 //
 
 #include <Meteor/Meteor.h>
+#include "DanceScene.hpp"
 using namespace Meteor;
 
 int main(int argc, char** argv) {
     
     srand((unsigned int)time(nullptr));
-    return GameMain<Scene>();
+    return GameMain<DanceScene>();
 }
