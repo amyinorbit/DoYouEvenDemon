@@ -15,11 +15,15 @@ const int kBeatNotification         = kBeatControllerMask | 0;
 const int kOffBeatNotification      = kBeatControllerMask | 1;
 const int kBeatCanceledNotification = kBeatControllerMask | 2;
 const int kSongFinishedNotification = kBeatControllerMask | 3;
+const int kStartValidNotification   = kBeatControllerMask | 4;
+const int kEndValidNotification     = kBeatControllerMask | 5;
 
 double BeatController::_beatTime = 0;
 double BeatController::_prog = 0;
-double BeatController::_beatWindow;
+double BeatController::_beatWindow = 0;
+double BeatController::_delay = 0.02;
 Uint8  BeatController::_beatProgression = 0;
+bool   BeatController::_inWindow = false;
 
 void callback() {
     Messenger::postMessage(kSongFinishedNotification);
@@ -27,12 +31,13 @@ void callback() {
 
 void BeatController::setBPM(double BPM) {
     _beatTime = 60.0 / (BPM * precision);
-    _prog = 0;
-    _beatProgression = 0;
+    _beatWindow = _beatTime / 4.0;
 }
 
 void BeatController::setMusicFile(const std::string &file, int loops) {
     AudioEngine::playMusic(file, loops);
+    _prog = -_delay;
+    _beatProgression = 0;
     Mix_HookMusicFinished(callback);
 }
 
@@ -48,9 +53,33 @@ void BeatController::update(double delta) {
         }
         _beatProgression += 1;
         _beatProgression %= precision;
+        //std::cout<<":beat:";
+        std::cout.flush();
+    }
+    _controlEnterBuffer();
+    _controlExitBuffer();
+}
+
+bool BeatController::validateTiming() {
+    return _inWindow;
+}
+
+void BeatController::setDelay(double delay) {
+    _delay = delay;
+}
+
+void BeatController::_controlEnterBuffer() {
+    if(_inWindow) return;
+    if(_prog > -_beatWindow/2.0) {
+        _inWindow = true;
+        Messenger::postMessage(kStartValidNotification);
     }
 }
 
-void BeatController::validateTiming() {
-    
+void BeatController::_controlExitBuffer() {
+    if(!_inWindow) return;
+    if(_prog > _beatWindow-_beatTime && _prog < -_beatWindow/2.0 ) {
+        _inWindow = false;
+        //std::cout<<"exit"<<std::endl;
+    }
 }

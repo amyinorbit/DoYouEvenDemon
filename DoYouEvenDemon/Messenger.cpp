@@ -44,23 +44,3 @@ void Messenger::postMessage(int message) {
         obs.callback();
     });
 }
-
-
-
-/*
-std::unordered_map<int, std::function<void()>> Messenger::_listeners;
-
-void Messenger::setObserver(int message, std::function<void ()> observer) {
-    _listeners.emplace(message, observer);
-}
-
-void Messenger::removeObserver(int message) {
-    if(_listeners.find(message) == _listeners.end()) { return; }
-    _listeners.erase(message);
-}
-
-void Messenger::postMessage(int message) {
-    if(_listeners.find(message) == _listeners.end()) { return; }
-        _listeners[message]();
-}
-*/

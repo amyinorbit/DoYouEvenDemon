@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DB106F791C5C0237008A512B /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB106F781C5C0237008A512B /* settings.plist */; };
+		DB3DD8BE1C5D6B12005E72B0 /* NoteController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3DD8BC1C5D6B12005E72B0 /* NoteController.cpp */; };
+		DB3DD8C11C5D9386005E72B0 /* CalibrationScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3DD8BF1C5D9386005E72B0 /* CalibrationScene.cpp */; };
 		DB9DBDD41C5CE8D000572E09 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = DB9DBDD31C5CE8D000572E09 /* assets */; };
 		DB9DBDD91C5CF90700572E09 /* BeatController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB9DBDD51C5CED8000572E09 /* BeatController.cpp */; };
 		DB9DBDDC1C5D094600572E09 /* DanceScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB9DBDDA1C5D094600572E09 /* DanceScene.cpp */; };
@@ -47,6 +49,10 @@
 /* Begin PBXFileReference section */
 		DB106F781C5C0237008A512B /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
 		DB106F9B1C5CC04E008A512B /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		DB3DD8BC1C5D6B12005E72B0 /* NoteController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteController.cpp; sourceTree = "<group>"; };
+		DB3DD8BD1C5D6B12005E72B0 /* NoteController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoteController.hpp; sourceTree = "<group>"; };
+		DB3DD8BF1C5D9386005E72B0 /* CalibrationScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalibrationScene.cpp; sourceTree = "<group>"; };
+		DB3DD8C01C5D9386005E72B0 /* CalibrationScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CalibrationScene.hpp; sourceTree = "<group>"; };
 		DB9DBDD31C5CE8D000572E09 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
 		DB9DBDD51C5CED8000572E09 /* BeatController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BeatController.cpp; sourceTree = "<group>"; };
 		DB9DBDD61C5CED8000572E09 /* BeatController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BeatController.hpp; sourceTree = "<group>"; };
@@ -86,19 +92,23 @@
 			children = (
 				DB9DBDDA1C5D094600572E09 /* DanceScene.cpp */,
 				DB9DBDDB1C5D094600572E09 /* DanceScene.hpp */,
+				DB3DD8BF1C5D9386005E72B0 /* CalibrationScene.cpp */,
+				DB3DD8C01C5D9386005E72B0 /* CalibrationScene.hpp */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
 		};
-		DB106F971C5CBD9E008A512B /* systems */ = {
+		DB106F971C5CBD9E008A512B /* Systems */ = {
 			isa = PBXGroup;
 			children = (
 				DB9DBDD51C5CED8000572E09 /* BeatController.cpp */,
 				DB9DBDD61C5CED8000572E09 /* BeatController.hpp */,
 				DB9DBDDD1C5D0AFD00572E09 /* Messenger.cpp */,
 				DB9DBDDE1C5D0AFD00572E09 /* Messenger.hpp */,
+				DB3DD8BC1C5D6B12005E72B0 /* NoteController.cpp */,
+				DB3DD8BD1C5D6B12005E72B0 /* NoteController.hpp */,
 			);
-			name = systems;
+			name = Systems;
 			sourceTree = "<group>";
 		};
 		DBF3382E1C5BFFD700864199 = {
@@ -123,7 +133,7 @@
 			children = (
 				DB9DBDD31C5CE8D000572E09 /* assets */,
 				DBF338401C5BFFD700864199 /* Assets.xcassets */,
-				DB106F971C5CBD9E008A512B /* systems */,
+				DB106F971C5CBD9E008A512B /* Systems */,
 				DB106F961C5CBD93008A512B /* scenes */,
 				DBF3383D1C5BFFD700864199 /* Supporting Files */,
 			);
@@ -226,6 +236,8 @@
 			files = (
 				DB9DBDDC1C5D094600572E09 /* DanceScene.cpp in Sources */,
 				DBF3383F1C5BFFD700864199 /* main.cpp in Sources */,
+				DB3DD8BE1C5D6B12005E72B0 /* NoteController.cpp in Sources */,
+				DB3DD8C11C5D9386005E72B0 /* CalibrationScene.cpp in Sources */,
 				DB9DBDDF1C5D0AFD00572E09 /* Messenger.cpp in Sources */,
 				DB9DBDD91C5CF90700572E09 /* BeatController.cpp in Sources */,
 			);

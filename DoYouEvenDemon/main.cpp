@@ -8,6 +8,7 @@
 
 #include <Meteor/Meteor.h>
 #include "DanceScene.hpp"
+#include "CalibrationScene.hpp"
 using namespace Meteor;
 
 int main(int argc, char** argv) {

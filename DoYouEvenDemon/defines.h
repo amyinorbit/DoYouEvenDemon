@@ -9,7 +9,7 @@
 #ifndef defines_h
 #define defines_h
 
-#define self (*this)
-
+#define mask(bit) (0b1 << (bit-1))
+#define unmask(bit) (~(0b1 << (bit-1))
 
 #endif /* defines_h */

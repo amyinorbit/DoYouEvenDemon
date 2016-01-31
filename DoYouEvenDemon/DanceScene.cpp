@@ -19,16 +19,16 @@ static int level = 0;
 
 DanceScene::~DanceScene() {
     // cleanup when the scene is deleted
-    Messenger::removeObserver(kBeatNotification, "sceneBeatObs");
-    Messenger::removeObserver(kSongFinishedNotification, "sceneFinishObs");
+    Messenger::removeObserver(kBeatNotification, "dance");
+    Messenger::removeObserver(kSongFinishedNotification, "dance");
     
 }
 
 void DanceScene::didMoveToView() {
     // called when the scene is entering the view
-    
-    
+    Controls::setDelegate(this);
     setBackgroundColor({.2f, .2f, .2f});
+    _comboCounter = 0;
     
     auto follower = alloc<SpriteNode>("assets/img/worshipers.png");
     follower->setClipRect({0, 0, 64, 64});
@@ -37,14 +37,14 @@ void DanceScene::didMoveToView() {
     
     static bool doit = false;
     
-    Messenger::addObserver(kBeatNotification, "sceneBeatObs", [this, follower](){
+    Messenger::addObserver(kBeatNotification, "dance", [this, follower](){
         doit = !doit;
         if(!doit) return;
         follower->runAction(Action::animate({0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12},
                                             60.f/(70.f * 13)), "bow");
     });
     
-    Messenger::addObserver(kSongFinishedNotification, "sceneFinishObs", [this](){
+    Messenger::addObserver(kSongFinishedNotification, "dance", [this](){
         level += 1;
         level = cap(level, 2);
         BeatController::setMusicFile(levels[level]);
@@ -63,4 +63,18 @@ void DanceScene::update(double delta) {
 
 void DanceScene::keyDown(Meteor::Key aKey) {
     // called when a key press occurs
+    if(aKey == Key::SPACE) {
+        if(BeatController::validateTiming()) {
+            AudioEngine::playSound("assets/sound/fx-success.wav");
+            _comboCounter += 1;
+        } else {
+            AudioEngine::playSound("assets/sound/fx-fail.wav");
+            _comboCounter = 0;
+        }
+        
+        if(_comboCounter == 10) {
+            AudioEngine::playSound("assets/sound/fx-combo.wav");
+        }
+        std::cout << "VALID BEAT: " << BeatController::validateTiming() << std::endl;
+    }
 }

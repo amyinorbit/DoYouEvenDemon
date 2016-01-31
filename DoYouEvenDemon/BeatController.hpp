@@ -17,6 +17,8 @@ extern const int kBeatNotification;
 extern const int kOffBeatNotification;
 extern const int kBeatCanceledNotification;
 extern const int kSongFinishedNotification;
+extern const int kStartValidNotification;
+extern const int kEndValidNotification;
 
 
 class BeatController final {
@@ -28,11 +30,19 @@ public:
     
     static void update(double delta);
     
-    static void validateTiming();
+    static bool validateTiming();
+    
+    static void setDelay(double delay);
     
 private:
     
-    static const Uint8 precision = 2;
+    static double _delay;
+    
+    static void _controlEnterBuffer();
+    
+    static void _controlExitBuffer();
+    
+    static const Uint8 precision = 1;
     
     BeatController() = delete;
     BeatController(const BeatController&) = delete;
@@ -42,6 +52,7 @@ private:
     static Uint8   _beatProgression;
     static double  _prog;
     static double  _beatWindow;
+    static bool    _inWindow;
 };
 
 #endif /* beatController_hpp */

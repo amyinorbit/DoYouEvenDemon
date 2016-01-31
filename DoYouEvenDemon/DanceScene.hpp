@@ -9,7 +9,7 @@
 #define DanceScene_hpp
 
 #include <Meteor/Meteor.h>
-#include "beatController.hpp"
+#include "BeatController.hpp"
 using namespace Meteor;
 
 class DanceScene : public Scene, public ControlsDelegate {
@@ -28,6 +28,12 @@ public:
     // MARK: Control Delegate
     
     void keyDown(Key aKey) override;
+    
+    
+private:
+    
+    
+    Uint16 _comboCounter;
     
 };
 
