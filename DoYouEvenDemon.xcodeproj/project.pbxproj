@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		DB106F791C5C0237008A512B /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB106F781C5C0237008A512B /* settings.plist */; };
+		DB1637211C5E0DA900712DF5 /* Arrow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB16371F1C5E0DA900712DF5 /* Arrow.cpp */; };
+		DB1637241C5E470000712DF5 /* TempLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB1637221C5E470000712DF5 /* TempLabel.cpp */; };
+		DB1637271C5E4A5F00712DF5 /* EndScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB1637251C5E4A5F00712DF5 /* EndScene.cpp */; };
+		DB16372A1C5E4B3200712DF5 /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB1637281C5E4B3200712DF5 /* MainMenu.cpp */; };
+		DB16372D1C5E505100712DF5 /* SplashScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB16372B1C5E505100712DF5 /* SplashScreen.cpp */; };
+		DB1637331C5E57E200712DF5 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = DB1637321C5E57E200712DF5 /* Makefile */; };
+		DB1637351C5E585600712DF5 /* info.rc in Resources */ = {isa = PBXBuildFile; fileRef = DB1637341C5E585600712DF5 /* info.rc */; };
 		DB3DD8BE1C5D6B12005E72B0 /* NoteController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3DD8BC1C5D6B12005E72B0 /* NoteController.cpp */; };
 		DB3DD8C11C5D9386005E72B0 /* CalibrationScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB3DD8BF1C5D9386005E72B0 /* CalibrationScene.cpp */; };
 		DB9DBDD41C5CE8D000572E09 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = DB9DBDD31C5CE8D000572E09 /* assets */; };
@@ -49,6 +56,18 @@
 /* Begin PBXFileReference section */
 		DB106F781C5C0237008A512B /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
 		DB106F9B1C5CC04E008A512B /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		DB16371F1C5E0DA900712DF5 /* Arrow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Arrow.cpp; sourceTree = "<group>"; };
+		DB1637201C5E0DA900712DF5 /* Arrow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Arrow.hpp; sourceTree = "<group>"; };
+		DB1637221C5E470000712DF5 /* TempLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TempLabel.cpp; sourceTree = "<group>"; };
+		DB1637231C5E470000712DF5 /* TempLabel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TempLabel.hpp; sourceTree = "<group>"; };
+		DB1637251C5E4A5F00712DF5 /* EndScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EndScene.cpp; sourceTree = "<group>"; };
+		DB1637261C5E4A5F00712DF5 /* EndScene.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EndScene.hpp; sourceTree = "<group>"; };
+		DB1637281C5E4B3200712DF5 /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenu.cpp; sourceTree = "<group>"; };
+		DB1637291C5E4B3200712DF5 /* MainMenu.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MainMenu.hpp; sourceTree = "<group>"; };
+		DB16372B1C5E505100712DF5 /* SplashScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SplashScreen.cpp; sourceTree = "<group>"; };
+		DB16372C1C5E505100712DF5 /* SplashScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SplashScreen.hpp; sourceTree = "<group>"; };
+		DB1637321C5E57E200712DF5 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DB1637341C5E585600712DF5 /* info.rc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info.rc; sourceTree = "<group>"; };
 		DB3DD8BC1C5D6B12005E72B0 /* NoteController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NoteController.cpp; sourceTree = "<group>"; };
 		DB3DD8BD1C5D6B12005E72B0 /* NoteController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = NoteController.hpp; sourceTree = "<group>"; };
 		DB3DD8BF1C5D9386005E72B0 /* CalibrationScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CalibrationScene.cpp; sourceTree = "<group>"; };
@@ -94,6 +113,12 @@
 				DB9DBDDB1C5D094600572E09 /* DanceScene.hpp */,
 				DB3DD8BF1C5D9386005E72B0 /* CalibrationScene.cpp */,
 				DB3DD8C01C5D9386005E72B0 /* CalibrationScene.hpp */,
+				DB1637251C5E4A5F00712DF5 /* EndScene.cpp */,
+				DB1637261C5E4A5F00712DF5 /* EndScene.hpp */,
+				DB1637281C5E4B3200712DF5 /* MainMenu.cpp */,
+				DB1637291C5E4B3200712DF5 /* MainMenu.hpp */,
+				DB16372B1C5E505100712DF5 /* SplashScreen.cpp */,
+				DB16372C1C5E505100712DF5 /* SplashScreen.hpp */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -109,6 +134,17 @@
 				DB3DD8BD1C5D6B12005E72B0 /* NoteController.hpp */,
 			);
 			name = Systems;
+			sourceTree = "<group>";
+		};
+		DB16371E1C5E07A000712DF5 /* GameObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DB16371F1C5E0DA900712DF5 /* Arrow.cpp */,
+				DB1637201C5E0DA900712DF5 /* Arrow.hpp */,
+				DB1637221C5E470000712DF5 /* TempLabel.cpp */,
+				DB1637231C5E470000712DF5 /* TempLabel.hpp */,
+			);
+			name = GameObjects;
 			sourceTree = "<group>";
 		};
 		DBF3382E1C5BFFD700864199 = {
@@ -133,6 +169,7 @@
 			children = (
 				DB9DBDD31C5CE8D000572E09 /* assets */,
 				DBF338401C5BFFD700864199 /* Assets.xcassets */,
+				DB16371E1C5E07A000712DF5 /* GameObjects */,
 				DB106F971C5CBD9E008A512B /* Systems */,
 				DB106F961C5CBD93008A512B /* scenes */,
 				DBF3383D1C5BFFD700864199 /* Supporting Files */,
@@ -147,6 +184,8 @@
 				DB106F781C5C0237008A512B /* settings.plist */,
 				DBF3383E1C5BFFD700864199 /* main.cpp */,
 				DB106F9B1C5CC04E008A512B /* defines.h */,
+				DB1637321C5E57E200712DF5 /* Makefile */,
+				DB1637341C5E585600712DF5 /* info.rc */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -165,10 +204,27 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXLegacyTarget section */
+		DB1637361C5E58C300712DF5 /* DoYouEvenDemon-Win32 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = DB1637371C5E58C300712DF5 /* Build configuration list for PBXLegacyTarget "DoYouEvenDemon-Win32" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = /Users/cesar/Dropbox/gamedev/jams/GGJ16/DoYouEvenDemon/DoYouEvenDemon;
+			dependencies = (
+			);
+			name = "DoYouEvenDemon-Win32";
+			passBuildSettingsInEnvironment = 1;
+			productName = DoYouEvenDemon;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
-		DBF338361C5BFFD700864199 /* DoYouEvenDemon */ = {
+		DBF338361C5BFFD700864199 /* DoYouEvenDemon-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBF338481C5BFFD700864199 /* Build configuration list for PBXNativeTarget "DoYouEvenDemon" */;
+			buildConfigurationList = DBF338481C5BFFD700864199 /* Build configuration list for PBXNativeTarget "DoYouEvenDemon-Mac" */;
 			buildPhases = (
 				DBF338331C5BFFD700864199 /* Sources */,
 				DBF338341C5BFFD700864199 /* Frameworks */,
@@ -179,7 +235,7 @@
 			);
 			dependencies = (
 			);
-			name = DoYouEvenDemon;
+			name = "DoYouEvenDemon-Mac";
 			productName = DoYouEvenDemon;
 			productReference = DBF338371C5BFFD700864199 /* DoYouEvenDemon.app */;
 			productType = "com.apple.product-type.application";
@@ -193,6 +249,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = PixelSpark;
 				TargetAttributes = {
+					DB1637361C5E58C300712DF5 = {
+						CreatedOnToolsVersion = 7.2;
+					};
 					DBF338361C5BFFD700864199 = {
 						CreatedOnToolsVersion = 7.2;
 					};
@@ -211,7 +270,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBF338361C5BFFD700864199 /* DoYouEvenDemon */,
+				DBF338361C5BFFD700864199 /* DoYouEvenDemon-Mac */,
+				DB1637361C5E58C300712DF5 /* DoYouEvenDemon-Win32 */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +283,7 @@
 			files = (
 				DB9DBDD41C5CE8D000572E09 /* assets in Resources */,
 				DBF338411C5BFFD700864199 /* Assets.xcassets in Resources */,
+				DB1637351C5E585600712DF5 /* info.rc in Resources */,
 				DB106F791C5C0237008A512B /* settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,18 +295,50 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1637271C5E4A5F00712DF5 /* EndScene.cpp in Sources */,
 				DB9DBDDC1C5D094600572E09 /* DanceScene.cpp in Sources */,
 				DBF3383F1C5BFFD700864199 /* main.cpp in Sources */,
 				DB3DD8BE1C5D6B12005E72B0 /* NoteController.cpp in Sources */,
 				DB3DD8C11C5D9386005E72B0 /* CalibrationScene.cpp in Sources */,
+				DB1637241C5E470000712DF5 /* TempLabel.cpp in Sources */,
+				DB1637331C5E57E200712DF5 /* Makefile in Sources */,
+				DB16372D1C5E505100712DF5 /* SplashScreen.cpp in Sources */,
 				DB9DBDDF1C5D0AFD00572E09 /* Messenger.cpp in Sources */,
+				DB1637211C5E0DA900712DF5 /* Arrow.cpp in Sources */,
 				DB9DBDD91C5CF90700572E09 /* BeatController.cpp in Sources */,
+				DB16372A1C5E4B3200712DF5 /* MainMenu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DB1637381C5E58C300712DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = DoYouEvenDemon;
+			};
+			name = Debug;
+		};
+		DB1637391C5E58C300712DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = DoYouEvenDemon;
+			};
+			name = Release;
+		};
 		DBF338461C5BFFD700864199 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -334,10 +427,11 @@
 					/Users/cesar/toolchains/lib/osx,
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
 				);
+				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = DoYouEvenDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarparent.DoYouEvenDemon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DoYouEvenDemon;
 			};
 			name = Debug;
 		};
@@ -353,13 +447,21 @@
 				INFOPLIST_FILE = DoYouEvenDemon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarparent.DoYouEvenDemon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DoYouEvenDemon;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB1637371C5E58C300712DF5 /* Build configuration list for PBXLegacyTarget "DoYouEvenDemon-Win32" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1637381C5E58C300712DF5 /* Debug */,
+				DB1637391C5E58C300712DF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		DBF338321C5BFFD700864199 /* Build configuration list for PBXProject "DoYouEvenDemon" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -369,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBF338481C5BFFD700864199 /* Build configuration list for PBXNativeTarget "DoYouEvenDemon" */ = {
+		DBF338481C5BFFD700864199 /* Build configuration list for PBXNativeTarget "DoYouEvenDemon-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBF338491C5BFFD700864199 /* Debug */,

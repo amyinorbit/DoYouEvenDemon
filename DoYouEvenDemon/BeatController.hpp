@@ -26,6 +26,8 @@ public:
     
     static void setBPM(double BPM);
     
+    static double timeToNextBeat();
+    
     static void setMusicFile(const std::string& file, int loops = 1);
     
     static void update(double delta);
@@ -33,6 +35,8 @@ public:
     static bool validateTiming();
     
     static void setDelay(double delay);
+    
+    static void stop();
     
 private:
     

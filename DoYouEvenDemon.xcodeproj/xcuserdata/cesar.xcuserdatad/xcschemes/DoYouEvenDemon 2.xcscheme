@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DBF338361C5BFFD700864199"
-               BuildableName = "DoYouEvenDemon.app"
-               BlueprintName = "DoYouEvenDemon-Mac"
+               BlueprintIdentifier = "DB1637361C5E58C300712DF5"
+               BuildableName = "DoYouEvenDemon-Win32"
+               BlueprintName = "DoYouEvenDemon-Win32"
                ReferencedContainer = "container:DoYouEvenDemon.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DBF338361C5BFFD700864199"
-            BuildableName = "DoYouEvenDemon.app"
-            BlueprintName = "DoYouEvenDemon-Mac"
-            ReferencedContainer = "container:DoYouEvenDemon.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DBF338361C5BFFD700864199"
-            BuildableName = "DoYouEvenDemon.app"
-            BlueprintName = "DoYouEvenDemon-Mac"
+            BlueprintIdentifier = "DB1637361C5E58C300712DF5"
+            BuildableName = "DoYouEvenDemon-Win32"
+            BlueprintName = "DoYouEvenDemon-Win32"
             ReferencedContainer = "container:DoYouEvenDemon.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DBF338361C5BFFD700864199"
-            BuildableName = "DoYouEvenDemon.app"
-            BlueprintName = "DoYouEvenDemon-Mac"
+            BlueprintIdentifier = "DB1637361C5E58C300712DF5"
+            BuildableName = "DoYouEvenDemon-Win32"
+            BlueprintName = "DoYouEvenDemon-Win32"
             ReferencedContainer = "container:DoYouEvenDemon.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

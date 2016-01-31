@@ -8,6 +8,7 @@
 
 #include "Messenger.hpp"
 #include <algorithm>
+#include <cstring>
 
 
 std::vector<Messenger::observer> Messenger::_listeners;
@@ -41,6 +42,8 @@ void Messenger::removeObserver(int message, const char *name) {
 void Messenger::postMessage(int message) {
     std::for_each(_listeners.begin(), _listeners.end(), [message](const observer& obs){
         if(obs.message != message) return;
-        obs.callback();
+        if(obs.callback) {
+            obs.callback();
+        }
     });
 }

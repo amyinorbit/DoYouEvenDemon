@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DoYouEvenDemon 2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>DoYouEvenDemon.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DB1637361C5E58C300712DF5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DBF338361C5BFFD700864199</key>
 		<dict>
 			<key>primary</key>

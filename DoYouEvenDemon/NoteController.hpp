@@ -11,35 +11,14 @@
 
 #include <stdio.h>
 #include <Meteor/Meteor.h>
-#include <deque>
+#include <unordered_map>
 #include "defines.h"
+#include "Arrow.hpp"
 
 extern const int kAcceptingNoteNotification;
-
-struct Note {
-    static const Uint8 Left     = mask(1);
-    static const Uint8 Right    = mask(2);
-    static const Uint8 Up       = mask(3);
-    static const Uint8 Down     = mask(4);
-    
-    Note(Uint8 keys = 0) {
-        value = keys & all;
-    }
-    
-    bool validateKeys(Uint8 keys) {
-        return !(keys ^ value);
-    }
-    
-    bool operator==(const Note& other) const {
-        return (value == other.value);
-    }
-    
-private:
-    
-    static const Uint8 all = Left | Right | Up | Down;
-    Uint8 value;
-    
-};
+extern const int kComboNotification;
+extern const int kValidBeatNotification;
+extern const int kFailedBeatNotification;
 
 
 
@@ -51,7 +30,7 @@ struct NoteController final {
     
     bool validateKeys(Note note);
     
-    void pushNote(Note note);
+    void pushNote(ARC<Arrow> note);
     
 private:
     
@@ -61,11 +40,15 @@ private:
     
     void exitWindow();
     
-    Note _current;
+    ARC<Arrow> _current;
     
-    Note _next;
+    ARC<Arrow> _next;
+    
+    ARC<Arrow> _after;
     
     bool _inWindow;
+    
+    bool _validBeat;
     
 };
 

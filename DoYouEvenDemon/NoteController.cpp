@@ -10,7 +10,10 @@
 #include "BeatController.hpp"
 #include "Messenger.hpp"
 
-const int kAcceptingNoteNotification = mask(15) | 0x1;
+const int kAcceptingNoteNotification    = mask(15) | mask(1);
+const int kComboNotification            = mask(15) | mask(2);
+const int kValidBeatNotification        = mask(15) | mask(3);
+const int kFailedBeatNotification       = mask(15) | mask(4);
 
 NoteController::NoteController() : _inWindow(false) {
     // register observers
@@ -27,8 +30,12 @@ NoteController::~NoteController() {
     Messenger::removeObserver(kEndValidNotification, "note");
 }
 
-void NoteController::pushNote(Note note) {
-    _next = note;
+
+void NoteController::pushNote(ARC<Arrow> note) {
+    
+    _after = note;
+    
+    //_after = note;
 }
 
 void NoteController::enterWindow() {
@@ -36,12 +43,32 @@ void NoteController::enterWindow() {
 }
 
 bool NoteController::validateKeys(Note note) {
-    return _inWindow && (note == _current);
+    if(!_inWindow) return false;
+    if(_current == Arrow::None) return false;
+    _validBeat = (note == _current->value());
+    if(_validBeat) {
+        _current->valid();
+    } else {
+        _current->invalid();
+    }
+    return _validBeat;
 }
 
 void NoteController::exitWindow() {
     _inWindow = false;
-    // Copy the next notes into the current ones.ß
+    
+    if(_current != Arrow::None && !_validBeat) {
+        Messenger::postMessage(kFailedBeatNotification);
+        _current->invalid();
+    }
+    else if(_current != Arrow::None && _validBeat) {
+        Messenger::postMessage(kValidBeatNotification);
+        _current->valid();
+    }
+    
     _current = _next;
+    _next = _after;
+    _after = Arrow::None;
+    _validBeat = false;
     Messenger::postMessage(kAcceptingNoteNotification);
 }

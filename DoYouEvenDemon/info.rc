@@ -1,0 +1,24 @@
+//0 ICON "icon.ico"
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904E4"
+        BEGIN
+            VALUE "CompanyName", "Pixelspark"
+            VALUE "FileDescription", "Do You Even Demon?"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "doyouevendemon"
+            VALUE "LegalCopyright", "Pixelspark"
+            VALUE "OriginalFilename", "DoYouEvenDemon.exe"
+            VALUE "ProductName", "Do You Even Demon"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1252
+    END
+END

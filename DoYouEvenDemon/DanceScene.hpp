@@ -9,11 +9,15 @@
 #define DanceScene_hpp
 
 #include <Meteor/Meteor.h>
+#include <vector>
 #include "BeatController.hpp"
+#include "NoteController.hpp"
 using namespace Meteor;
 
 class DanceScene : public Scene, public ControlsDelegate {
 public:
+    
+    DanceScene();
     
     // MARK: Scene Cleanup
     
@@ -22,6 +26,8 @@ public:
     // MARK: Game management and logic
     
     void didMoveToView() override;
+    
+    void willMoveFromView() override;
     
     void update(double delta) override;
     
@@ -32,8 +38,37 @@ public:
     
 private:
     
+    void onNextNotes();
     
-    Uint16 _comboCounter;
+    void onBeat();
+    
+    void onLoop();
+    
+    void onScore();
+    
+    void onFail();
+    
+    ARC<SpriteNode> _main;
+    
+    ARC<LabelNode> _scoreLabel;
+    
+    NoteController _controller;
+    
+    Int32 _score;
+    
+    Uint16 _combo;
+    
+    bool _gameover;
+    
+    enum Layers {
+        LayerBackground,
+        LayerBoss,
+        LayerArrows,
+        LayerFire,
+        LayerLabels,
+        LayerGui,
+        LayerFollowers,
+    };
     
 };
 

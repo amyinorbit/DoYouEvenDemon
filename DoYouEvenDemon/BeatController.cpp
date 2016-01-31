@@ -21,7 +21,7 @@ const int kEndValidNotification     = kBeatControllerMask | 5;
 double BeatController::_beatTime = 0;
 double BeatController::_prog = 0;
 double BeatController::_beatWindow = 0;
-double BeatController::_delay = 0.02;
+double BeatController::_delay = 0;
 Uint8  BeatController::_beatProgression = 0;
 bool   BeatController::_inWindow = false;
 
@@ -31,7 +31,11 @@ void callback() {
 
 void BeatController::setBPM(double BPM) {
     _beatTime = 60.0 / (BPM * precision);
-    _beatWindow = _beatTime / 4.0;
+    _beatWindow = _beatTime / 6.0;
+}
+
+double BeatController::timeToNextBeat() {
+    return -_prog + (2*_beatTime);
 }
 
 void BeatController::setMusicFile(const std::string &file, int loops) {
@@ -39,6 +43,11 @@ void BeatController::setMusicFile(const std::string &file, int loops) {
     _prog = -_delay;
     _beatProgression = 0;
     Mix_HookMusicFinished(callback);
+}
+
+void BeatController::stop() {
+    Mix_HookMusicFinished(nullptr);
+    AudioEngine::stopMusic(.5f);
 }
 
 void BeatController::update(double delta) {
@@ -70,7 +79,7 @@ void BeatController::setDelay(double delay) {
 
 void BeatController::_controlEnterBuffer() {
     if(_inWindow) return;
-    if(_prog > -_beatWindow/2.0) {
+    if(_prog > -_beatWindow) {
         _inWindow = true;
         Messenger::postMessage(kStartValidNotification);
     }
@@ -78,8 +87,9 @@ void BeatController::_controlEnterBuffer() {
 
 void BeatController::_controlExitBuffer() {
     if(!_inWindow) return;
-    if(_prog > _beatWindow-_beatTime && _prog < -_beatWindow/2.0 ) {
+    if(_prog > _beatWindow-_beatTime && _prog < -_beatWindow ) {
         _inWindow = false;
+        Messenger::postMessage(kEndValidNotification);
         //std::cout<<"exit"<<std::endl;
     }
 }

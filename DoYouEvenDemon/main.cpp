@@ -7,12 +7,12 @@
 //
 
 #include <Meteor/Meteor.h>
-#include "DanceScene.hpp"
-#include "CalibrationScene.hpp"
+#include "SplashScreen.hpp"
+#include <ctime>
 using namespace Meteor;
 
 int main(int argc, char** argv) {
     
     srand((unsigned int)time(nullptr));
-    return GameMain<DanceScene>();
+    return GameMain<SplashScreen>();
 }
