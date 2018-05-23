@@ -2,7 +2,7 @@
 //  DanceScene.cpp
 //  DoYouEvenDemon
 //
-//  Created by Cesar Parent on 30/01/2016.
+//  Created by Amy Parent on 30/01/2016.
 //  Copyright (c) 2016 PixelSpark. All rights reserved.
 //
 #include "DanceScene.hpp"

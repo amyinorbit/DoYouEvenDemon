@@ -2,7 +2,7 @@
 //  SplashScreen.hpp
 //  DoYouEvenDemon
 //
-//  Created by Cesar Parent on 31/01/2016.
+//  Created by Amy Parent on 31/01/2016.
 //  Copyright (c) 2016 PixelSpark. All rights reserved.
 //
 #ifndef SplashScreen_hpp

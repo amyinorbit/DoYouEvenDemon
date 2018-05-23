@@ -2,7 +2,7 @@
 //  main.m
 //  DoYouEvenDemon
 //
-//  Created by Cesar Parent on 29/01/2016.
+//  Created by Amy Parent on 29/01/2016.
 //  Copyright © 2016 cesarparent. All rights reserved.
 //
 
